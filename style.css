@@ -71,6 +71,8 @@ header nav ul li:hover a {
     background-color: var(--color);
     border-radius: 46px;
 }
+
+/* banner section */
 header section {
     display: flex;
     justify-content: space-between;
@@ -128,6 +130,10 @@ header section .img .div2 {
     bottom: 65px;
     left: -115px;
 }
+
+/* main section */
+/* habits section */
+
 
 
 
