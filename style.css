@@ -497,7 +497,8 @@ header section .img .div2 {
      }
      .run .container .img-container img {
         width: 100%;
-        height: 100%;
+        height: auto;
+        position: static;
      }
      .training .container .content {
         grid-template-areas: 
