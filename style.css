@@ -297,6 +297,65 @@ header section .img .div2 {
     justify-content: center;
 }
 
+/* bmi section */
+.bmi {
+    background-color: rgb(34, 34, 34);
+    color: white;
+}
+.bmi .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 52px 0;
+}
+.bmi-title {
+    font-weight: 900;
+    font-size: 1.75rem;
+}
+.bmi .container .cart table {
+    margin-top: 50px;
+    text-align: left;
+    border-collapse: collapse;
+}
+.bmi .container .cart table tr th, .bmi .container .cart table tr td {
+    padding: 15px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.bmi .container .cart table tr td {
+    color: rgba(255, 255, 255, 0.5);
+}
+.bmi .container .calculate p {
+    text-align: left;
+    margin: 0;
+    margin-bottom: 34px;
+    margin-top: 15px;
+}
+.bmi .container .calculate form label {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+.bmi .container .calculate form #activity{
+    margin-top: 12px;
+}
+.bmi .container .calculate form label input, .bmi .container .calculate form label select, .bmi .container .calculate form select {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 12px 40px 12px 20px;
+    color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    outline: none;
+}
+.bmi .container .calculate .btn {
+    padding: 16px 60px 16px 60px;
+    margin-top: 50px;
+}
+.bmi .container .calculate form label select option, .bmi .container .calculate form #activity option {
+    background-color: darkslategray;
+}
+
 
 
 
@@ -333,6 +392,12 @@ header section .img .div2 {
     }
     .training .container .text {
         display: block;
+    }
+    .bmi .container {
+        display: block;
+    }
+    .bmi .container .calculate {
+        margin-top: 60px;
     }
 }
 
@@ -379,6 +444,10 @@ header section .img .div2 {
      }
      .run .container .img-container {
         margin-top: 20px;
+     }
+     .run .container .img-container img {
+        width: 100%;
+        height: 100%;
      }
      .training .container .content {
         grid-template-areas: 
