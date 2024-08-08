@@ -10,8 +10,9 @@
     text-decoration: none;
     list-style: none;
 }
-html, body {
+body {
     overflow-x: hidden;
+    background: rgba(17, 17, 17);
 }
 section {
     padding: 0 190px;
@@ -133,6 +134,50 @@ header section .img .div2 {
 
 /* main section */
 /* habits section */
+.habit .container {
+    margin-top: 100px;
+}
+.habit .container h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+.habit .container p {
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+    width: 640px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.habit .content {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.habit .content div {
+    width: 231px;
+}
+.habit .content div img {
+    border-radius: 50%;
+}
+.habit .content div h4 {
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.habit .content div p {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 0.875rem;
+}
 
 
 
@@ -153,6 +198,14 @@ header section .img .div2 {
     header section  {
         flex-direction: column;
     }
+    .habit .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 40px;
+    }
+    .habit .content div {
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 480px) {
@@ -171,4 +224,19 @@ header section .img .div2 {
     .btn {
         padding: 16px 20px;
     }
+     header section .img .div1 {
+        top: 50px;
+        right: -42px;
+     }
+     header section .img .div2 {
+        left: -35px;
+        bottom: 150px;
+     }
+     .habit .container p {
+        width: 100%;
+     }
+     .habit .content {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+     }
 }
